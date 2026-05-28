@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="NEXVIA es una plataforma inteligente de transporte publico para reducir incertidumbre y organizar mejor la movilidad urbana."
+  />
+  <link rel="shortcut icon" href="logo.png" type="image/png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>NEXVIA | TU TIEMPO Y DESTINO SON NUESTRO COMPROMISO</title>
+</head>
+
+<body>
+  <div class="cursor-glow" id="cursor-glow"></div>
+
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#inicio" class="brand">
+        <span class="brand__mark">
+          <img src="logo.png" alt="Logo de NEXVIA" />
+        </span>
+        <span class="brand__text">
+          <strong>NEXVIA</strong>
+          <small>TU TIEMPO Y DESTINO SON NUESTRO COMPROMISO</small>
+        </span>
+      </a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li><a href="#inicio" class="nav__link active-link">Inicio</a></li>
+          <li><a href="#buscar-ruta" class="nav__link">Buscar Ruta</a></li>
+          <li><a href="#tiempo-real" class="nav__link">Tiempo Real</a></li>
+          <li><a href="#tarjeta" class="nav__link">Tarjeta Digital</a></li>
+          <li><a href="#recargas" class="nav__link">Recargas</a></li>
+          <li><a href="#transportista" class="nav__link">Transportista</a></li>
+          <li><a href="#ayuda" class="nav__link">Ayuda</a></li>
+        </ul>
+
+        <button class="nav__close" id="nav-close">
+          <i class="bx bx-x"></i>
+        </button>
+      </div>
+
+      <button class="nav__toggle" id="nav-toggle">
+        <i class="bx bx-menu-alt-right"></i>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero__background"></div>
+      <div class="hero__shade"></div>
+
+      <div class="quetzal">
+        <span class="quetzal__body"></span>
+        <span class="quetzal__head"></span>
+        <span class="quetzal__wing quetzal__wing--front"></span>
+        <span class="quetzal__wing quetzal__wing--back"></span>
+        <span class="quetzal__tail quetzal__tail--one"></span>
+        <span class="quetzal__tail quetzal__tail--two"></span>
+        <span class="quetzal__tail quetzal__tail--three"></span>
+      </div>
+
+      <div class="hero__container container grid">
+        <div class="hero__copy">
+          <span class="eyebrow">Plataforma inteligente de transporte publico</span>
+          <h1>Organiza tu movilidad sin incertidumbre</h1>
+          <p class="hero__slogan">TU TIEMPO Y DESTINO SON NUESTRO COMPROMISO</p>
+          <p class="hero__text">
+            NEXVIA conecta rutas, horarios, buses en tiempo real, saldo digital,
+            recargas, demanda de pasajeros y paneles operativos para que cada
+            usuario sepa como moverse, cuanto pagar y cuanto esperar.
+          </p>
+
+          <form class="hero-search" id="hero-search">
+            <i class="bx bx-search-alt"></i>
+            <input
+              type="search"
+              id="hero-destination"
+              placeholder="¿A donde quieres ir? Ejemplo: Zona 1"
+            />
+            <button type="submit">Buscar transporte</button>
+          </form>
+
+          <div class="hero__actions">
+            <a href="#buscar-ruta" class="button button--primary">
+              <i class="bx bx-trip"></i>
+              Planificar ruta
+            </a>
+            <a href="#tiempo-real" class="button button--glass">
+              <i class="bx bx-current-location"></i>
+              Ver buses en vivo
+            </a>
+          </div>
+        </div>
+
+        <aside class="quick-map">
+          <img src="imagen7.jpg" alt="Mapa rapido de movilidad inteligente" />
+          <div class="quick-map__overlay">
+            <span>Mapa rapido ciudad</span>
+            <strong>Bus proximo: 5 min</strong>
+            <small>Ruta rapida detectada hacia Zona 1</small>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section purpose">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">Proposito principal</span>
+          <h2>Reducir la incertidumbre y ayudar al usuario a organizar mejor su movilidad</h2>
+          <p>
+            La plataforma esta dividida en modulos: rutas, tiempo real, perfil,
+            tarjeta digital, recargas, recompensas, demanda, transportista,
+            supervisor, notificaciones y ayuda.
+          </p>
+        </div>
+
+        <div class="purpose__grid grid">
+          <article><i class="bx bx-shield-quarter"></i><strong>Seguridad</strong><span>Saber donde viene el bus.</span></article>
+          <article><i class="bx bx-calendar-check"></i><strong>Orden</strong><span>Planificar hora, ruta y costo.</span></article>
+          <article><i class="bx bx-check-shield"></i><strong>Confianza</strong><span>Tarifas y rutas claras.</span></article>
+          <article><i class="bx bx-tachometer"></i><strong>Rapidez</strong><span>Elegir la opcion mas eficiente.</span></article>
+          <article><i class="bx bx-chip"></i><strong>Modernidad</strong><span>Tecnologia urbana accesible.</span></article>
+          <article><i class="bx bx-leaf"></i><strong>Tranquilidad</strong><span>Menos dudas antes de salir.</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section route-module" id="buscar-ruta">
+      <div class="container">
+        <div class="module-head">
+          <div>
+            <span class="eyebrow">Modulo 01</span>
+            <h2>Buscador de rutas</h2>
+            <p>Encuentra como llegar, que transporte usar, cuanto costara y cuanto tardara.</p>
+          </div>
+          <img src="imagen3.jpg" alt="Carretera inteligente" />
+        </div>
+
+        <div class="route-planner grid">
+          <form class="planner-form" id="planner-form">
+            <label>
+              Ubicacion actual
+              <input type="text" name="origin" placeholder="Ejemplo: Parque Central" />
+            </label>
+
+            <label>
+              Destino
+              <input type="text" name="destination" id="route-search" placeholder="Ejemplo: Zona 1" />
+            </label>
+
+            <label>
+              Hora
+              <input type="time" name="time" />
+            </label>
+
+            <label>
+              Tipo transporte
+              <select name="transport">
+                <option>Bus urbano</option>
+                <option>TransMetro</option>
+                <option>Express</option>
+                <option>Cualquier transporte</option>
+              </select>
+            </label>
+
+            <label>
+              Prioridad
+              <select name="priority">
+                <option>Mas rapido</option>
+                <option>Mas barato</option>
+                <option>Menos transbordos</option>
+              </select>
+            </label>
+
+            <button type="submit" class="button button--primary">Buscar ruta</button>
+          </form>
+
+          <div class="results-panel">
+            <div class="results-panel__header">
+              <span>Resultados de rutas</span>
+              <strong id="result-count">4 opciones</strong>
+            </div>
+
+            <div class="route-results" id="routes-list">
+              <article class="route-card" data-route="zona 1 ruta 32 centro parque rapido barato">
+                <div><strong>Ruta 32</strong><span>Parada Central</span></div>
+                <p><b>Bus:</b> 5 min · <b>Viaje:</b> 24 min · <b>Tarifa:</b> Q3.00</p>
+                <p>Ocupacion media · Trafico fluido · 0 transbordos</p>
+                <div class="route-actions">
+                  <button>Ver mapa</button><button>Guardar</button><button>Compartir</button><button>Reportar</button>
+                </div>
+              </article>
+
+              <article class="route-card" data-route="zona 1 express norte terminal rapido">
+                <div><strong>Express Norte</strong><span>Terminal Norte</span></div>
+                <p><b>Bus:</b> 12 min · <b>Viaje:</b> 18 min · <b>Tarifa:</b> Q5.00</p>
+                <p>Ocupacion baja · Trafico moderado · 0 transbordos</p>
+                <div class="route-actions">
+                  <button>Ver mapa</button><button>Guardar</button><button>Compartir</button><button>Reportar</button>
+                </div>
+              </article>
+
+              <article class="route-card" data-route="zona 1 transmetro municipalidad barato">
+                <div><strong>TransMetro</strong><span>Municipalidad</span></div>
+                <p><b>Bus:</b> 7 min · <b>Viaje:</b> 30 min · <b>Tarifa:</b> Q1.00</p>
+                <p>Ocupacion alta · Ruta rapida · 1 transbordo</p>
+                <div class="route-actions">
+                  <button>Ver mapa</button><button>Guardar</button><button>Compartir</button><button>Reportar</button>
+                </div>
+              </article>
+
+              <article class="route-card" data-route="hospital universidad ruta medica zona 7">
+                <div><strong>Ruta Medica</strong><span>Hospital General</span></div>
+                <p><b>Bus:</b> 9 min · <b>Viaje:</b> 28 min · <b>Tarifa:</b> Q4.00</p>
+                <p>Ocupacion media · Trafico fluido · 1 transbordo</p>
+                <div class="route-actions">
+                  <button>Ver mapa</button><button>Guardar</button><button>Compartir</button><button>Reportar</button>
+                </div>
+              </article>
+            </div>
+
+            <p class="empty-message" id="empty-message">No hay rutas con ese criterio.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section realtime" id="tiempo-real">
+      <div class="container realtime__container grid">
+        <div class="visual-frame">
+          <img src="imagen1.jpg" alt="Panel de buses en mapa" />
+        </div>
+
+        <div>
+          <span class="eyebrow">Modulo 02</span>
+          <h2>Sistema de tiempo real</h2>
+          <p>
+            Elimina la duda sobre ubicacion del bus, retrasos, saturacion,
+            disponibilidad y congestionamiento.
+          </p>
+
+          <div class="status-grid grid">
+            <article><strong>Bus proximo</strong><span>Cercania confirmada</span></article>
+            <article><strong>Alta demanda</strong><span>Saturacion visible</span></article>
+            <article><strong>Retraso detectado</strong><span>Advertencia inmediata</span></article>
+            <article><strong>Ruta rapida</strong><span>Optimizacion sugerida</span></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section account" id="perfil">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">Modulo 03</span>
+          <h2>Perfil de usuario</h2>
+          <p>Centraliza identidad, rutas favoritas, historial, tiempo ahorrado, saldo y QR personal.</p>
+        </div>
+
+        <div class="profile-card grid">
+          <div class="profile-card__user">
+            <div class="avatar">NX</div>
+            <h3>Usuario NEXVIA</h3>
+            <p>correo@ejemplo.com · +502 0000 0000</p>
+          </div>
+          <div><strong>3 h 25 min</strong><span>Tiempo ahorrado</span></div>
+          <div><strong>12</strong><span>Rutas favoritas</span></div>
+          <div><strong>38</strong><span>Viajes registrados</span></div>
+          <div><strong>Q24.00</strong><span>Saldo disponible</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section digital-card-section" id="tarjeta">
+      <div class="container card-layout grid">
+        <div>
+          <span class="eyebrow">Modulo 04</span>
+          <h2>Tarjeta digital</h2>
+          <p>
+            Gestiona saldo, acceso, validacion y pasajes desde un QR unico.
+            Incluye viajes realizados, pasajes restantes, ultima recarga y estado.
+          </p>
+
+          <div class="card-actions">
+            <button class="button button--primary">Recargar saldo</button>
+            <button class="button button--glass">Transferir saldo</button>
+            <button class="button button--glass">Ver historial</button>
+            <button class="button button--danger">Bloquear tarjeta</button>
+          </div>
+        </div>
+
+        <div class="digital-wallet">
+          <img src="tarjeta digital.jpg" alt="Tarjeta digital" />
+          <div class="wallet-info">
+            <img src="qr.jpg" alt="QR personal de NEXVIA" />
+            <div>
+              <span>Estado: Activa</span>
+              <strong id="rides-left">8 pasajes</strong>
+              <small>Ultima recarga: hoy, 08:30</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section payments" id="recargas">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">Modulo 05</span>
+          <h2>Sistema de recargas</h2>
+          <p>Flexibilidad economica para agregar saldo desde diferentes canales.</p>
+        </div>
+
+        <div class="payment-grid grid">
+          <article><i class="bx bxs-bank"></i><strong>Banco</strong><span>Cuenta o referencia</span></article>
+          <article><i class="bx bx-credit-card"></i><strong>Tarjeta</strong><span>Datos bancarios</span></article>
+          <article><i class="bx bx-mobile-alt"></i><strong>Tiempo aire</strong><span>Numero telefonico</span></article>
+          <article><i class="bx bx-store"></i><strong>Agente</strong><span>Codigo de recarga</span></article>
+          <article><i class="bx bx-qr-scan"></i><strong>QR</strong><span>Escaneo inmediato</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section rewards" id="recompensas">
+      <div class="container rewards__container grid">
+        <div class="visual-frame">
+          <img src="imagen4.jpg" alt="Usuario validando QR" />
+        </div>
+
+        <div>
+          <span class="eyebrow">Modulo 06</span>
+          <h2>Recompensas sin anuncios invasivos</h2>
+          <p>
+            El usuario puede ver un anuncio recompensado y ganar un pasaje,
+            descuento o beneficio.
+          </p>
+          <button class="button button--primary" id="reward-button">Ganar pasaje</button>
+          <p class="reward-message" id="reward-message"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section demand" id="aqui-estoy">
+      <div class="container demand__container grid">
+        <div>
+          <span class="eyebrow">Modulo 07</span>
+          <h2>Boton “Aqui estoy”</h2>
+          <p>
+            Captura ubicacion, hora, ruta esperada y cantidad de usuarios para
+            medir demanda real de pasajeros.
+          </p>
+          <button class="button button--primary" id="here-button">
+            <i class="bx bx-map-pin"></i>
+            Aqui estoy
+          </button>
+        </div>
+
+        <div class="demand-panel">
+          <div class="demand-panel__top">
+            <span>Demanda actual</span>
+            <strong id="demand-count">18 usuarios</strong>
+          </div>
+          <p id="demand-message">Demanda estable: frecuencia recomendada cada 10 minutos.</p>
+          <div class="demand-bars">
+            <div><span>Ruta 32</span><b style="width: 82%"></b></div>
+            <div><span>Express Norte</span><b style="width: 58%"></b></div>
+            <div><span>TransMetro</span><b style="width: 68%"></b></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section operator" id="transportista">
+      <div class="container">
+        <div class="module-head">
+          <div>
+            <span class="eyebrow">Modulos 08 y 09</span>
+            <h2>Panel transportista y supervisor</h2>
+            <p>
+              El conductor gestiona ruta, horario, pasajeros, QR, trafico y demanda.
+              El supervisor monitorea buses activos, zonas saturadas, retrasos e incidencias.
+            </p>
+          </div>
+          <img src="imagen5.jpg" alt="Vehiculos conectados" />
+        </div>
+
+        <div class="operator-grid grid">
+          <article class="operator-card">
+            <h3>Transportista</h3>
+            <ul>
+              <li>Ruta asignada y horario</li>
+              <li>Cantidad de pasajeros</li>
+              <li>Validacion QR para cobro</li>
+              <li>Estado de trafico y demanda</li>
+            </ul>
+            <div class="operator-actions">
+              <button>Iniciar ruta</button>
+              <button>Finalizar ruta</button>
+              <button>Reportar problema</button>
+              <button>Ver demanda</button>
+            </div>
+          </article>
+
+          <article class="operator-card">
+            <h3>Supervisor</h3>
+            <ul>
+              <li>Buses activos y demanda por zonas</li>
+              <li>Horas pico y rutas saturadas</li>
+              <li>Retrasos e incidencias</li>
+              <li>Tiempo promedio de espera</li>
+            </ul>
+            <div class="supervisor-stats grid">
+              <span><strong>42</strong>Buses activos</span>
+              <span><strong>8 min</strong>Espera promedio</span>
+              <span><strong>1,240</strong>Usuarios activos</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section notifications">
+      <div class="container notifications__container grid">
+        <div>
+          <span class="eyebrow">Modulo 10</span>
+          <h2>Sistema de notificaciones</h2>
+          <p>Mantiene informado al usuario con alertas utiles, no invasivas.</p>
+        </div>
+
+        <div class="notification-list">
+          <article><i class="bx bx-bell"></i><strong>Bus proximo</strong><span>Tu bus llega en 5 minutos.</span></article>
+          <article><i class="bx bx-error"></i><strong>Retraso</strong><span>Congestion detectada en la ruta.</span></article>
+          <article><i class="bx bx-wallet"></i><strong>Saldo bajo</strong><span>Te quedan Q4.00 disponibles.</span></article>
+          <article><i class="bx bx-group"></i><strong>Ruta saturada</strong><span>Se recomienda una alternativa.</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section help" id="ayuda">
+      <div class="container help__container grid">
+        <div>
+          <span class="eyebrow">Modulo 11</span>
+          <h2>Centro de ayuda</h2>
+          <p>
+            Resuelve dudas, permite reportar problemas, consultar estado del
+            sistema y contactar soporte.
+          </p>
+        </div>
+
+        <form class="contact__form" id="contact-form" novalidate>
+          <label>
+            Nombre
+            <input type="text" name="name" placeholder="Tu nombre" />
+          </label>
+          <label>
+            Correo
+            <input type="email" name="email" placeholder="correo@ejemplo.com" />
+          </label>
+          <label>
+            Comentario
+            <textarea name="comment" rows="5" placeholder="Describe tu duda o problema"></textarea>
+          </label>
+          <button type="submit" class="button button--primary">Enviar solicitud</button>
+          <p class="form-message" id="form-message"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container container grid">
+      <a href="#inicio" class="brand">
+        <span class="brand__mark">
+          <img src="logo.png" alt="Logo de NEXVIA" />
+        </span>
+        <span class="brand__text">
+          <strong>NEXVIA</strong>
+          <small>TU TIEMPO Y DESTINO SON NUESTRO COMPROMISO</small>
+        </span>
+      </a>
+      <p>Plataforma modular para transporte publico inteligente.</p>
+      <p>Objetivo: reducir incertidumbre y organizar mejor la movilidad.</p>
+    </div>
+    <span class="footer__copy">NEXVIA - Plataforma Inteligente de Transporte Publico</span>
+  </footer>
+
+  <a href="#inicio" class="scrollup" id="scroll-up">
+    <i class="bx bx-up-arrow-alt"></i>
+  </a>
+
+  <script src="main.js"></script>
+</body>
+</html>
